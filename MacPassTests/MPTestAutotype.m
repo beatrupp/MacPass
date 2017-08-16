@@ -215,8 +215,7 @@
   XCTAssertEqual(keyPress.key.keyCode, kVK_Tab); // Tab is a fixed key, no mapping needed
   if(useCommandInsteadOfControl) {
     XCTAssertEqual(keyPress.key.modifier, (kCGEventFlagMaskCommand | kCGEventFlagMaskShift | kCGEventFlagMaskAlternate));
-  }
-  else {
+  } else {
     XCTAssertEqual(keyPress.key.modifier, (kCGEventFlagMaskControl | kCGEventFlagMaskShift | kCGEventFlagMaskAlternate));
   }
   
